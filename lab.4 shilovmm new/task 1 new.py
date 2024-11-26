@@ -18,3 +18,4 @@ def task() -> float:
 
 
 print(task())
+

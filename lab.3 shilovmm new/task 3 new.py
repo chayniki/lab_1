@@ -1,3 +1,4 @@
+# TODO  Напишите функцию count_letters
 def count_letters(text):
     text = text.lower()
     letters_duct = {}
@@ -7,6 +8,8 @@ def count_letters(text):
             letters_duct[letter] = letters_duct.get(letter, 0) + 1
 
     return letters_duct
+
+
 def calculate_frequency(letters):
     total_letters = sum(letters.values())
     letters_frequency = {}
@@ -15,6 +18,7 @@ def calculate_frequency(letters):
         letters_frequency[letter] = frequency / total_letters
 
     return letters_frequency
+
 
 # TODO Напишите функцию calculate_frequency
 
@@ -55,6 +59,12 @@ main_str = """
 Свои мне сказки говорил.
 """
 count_text = count_letters(main_str)
+
+new_frequncy_text = calculate_frequency(count_text)
+
+for char, percent in new_frequncy_text.items():
+    print(f'{char}: {percent:.2f}')
+# TODO Распечатайте в столбик букву и её частоту в тексте
 
 new_frequncy_text = calculate_frequency(count_text)
 

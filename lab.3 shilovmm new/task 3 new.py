@@ -1,4 +1,3 @@
-# TODO  Напишите функцию count_letters
 def count_letters(text):
     text = text.lower()
     letters_duct = {}
